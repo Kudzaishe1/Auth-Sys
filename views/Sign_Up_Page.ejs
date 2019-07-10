@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+ <head>
+   <link rel="stylesheet" href="/assets/styles.css">
+    <script src="/assets/SignUp_Validation.js"></script>
+</head>
+
+<body>
+    <div class="form-style-10">
+        <h1><%=Error%></h1>
+        <label for="Link">Already a user? Click here to sign in <a href="/sign_in" id="link">Click HERE</a></label>
+      <form method="post">
+        <div class="section"><span>1</span>Name & Surname</div>
+        <div class="inner-wrap">
+          <label>Full Name <input type="text" name="Name"/></label>
+          <label>Surname <input type="text" name="Surname"> </label>
+        </div>
+
+        <div class="section"><span>2</span>Email & Age</div>
+        <div class="inner-wrap">
+          <label>Email Address <input type="email"  id="EMAIL" name="Email" required  /></label>
+          <label>Age <input type="number" name="Age"/></label>
+        </div>
+
+        <div class="section"><span>3</span>Passwords</div>
+          <div class="inner-wrap">
+            <label>Password <input type="password" id="Pssw" name="Password" required /></label>
+            <label>Confirm Password <input type="password" id="Cn_Pssw" name="Confirm_Password" required /></label>
+          </div>
+          <div class="button-section">
+            <input type="submit" name="Sign Up" onclick="Validate_Info()"/>
+          </span>
+        </div>
+      </form>
+    </div>
+</body>
